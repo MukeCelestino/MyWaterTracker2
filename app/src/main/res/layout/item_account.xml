@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="50dp">
+    android:layout_height="55dp">
 
     <TextView
         android:id="@+id/acc"
@@ -13,29 +13,30 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/amnt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
 
     <TextView
         android:id="@+id/amnt"
         android:layout_width="49dp"
-        android:layout_height="23dp"
+        android:layout_height="18dp"
         android:text="amount"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.991"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintVertical_bias="0.108" />
 
     <TextView
         android:id="@+id/cps"
-        android:layout_width="38dp"
-        android:layout_height="19dp"
+        android:layout_width="48dp"
+        android:layout_height="22dp"
         android:ems="2"
-        android:text="cups"
+        android:hint="cup(s)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toEndOf="@+id/acc"
         app:layout_constraintTop_toBottomOf="@+id/amnt"
         app:layout_constraintVertical_bias="0.0" />
