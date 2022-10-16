@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordsActivity">
+
+    <Button
+        android:id="@+id/addRecord"
+        android:layout_width="141dp"
+        android:layout_height="54dp"
+        android:text="Hydrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountOfWater"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="96dp"
+        android:ems="12"
+        android:hint="Enter the time"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/amountOfWater"
+        android:layout_width="211dp"
+        android:layout_height="44dp"
+        android:ems="12"
+        android:hint="Enter Quantity (in cups)"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="79dp"
+        android:layout_height="35dp"
+        android:text="Account:"
+        app:layout_constraintBottom_toTopOf="@+id/cups"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.828" />
+
+    <TextView
+        android:id="@+id/cups"
+        android:layout_width="79dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="40dp"
+        android:text="Cups: "
+        app:layout_constraintBottom_toTopOf="@+id/addRecord"
+        app:layout_constraintEnd_toStartOf="@+id/amountOfWater"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
