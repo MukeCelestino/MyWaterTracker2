@@ -1,4 +1,4 @@
-package com.example.mywatertracker
+package com.example.mywatertracker2
 
 import org.junit.Test
 

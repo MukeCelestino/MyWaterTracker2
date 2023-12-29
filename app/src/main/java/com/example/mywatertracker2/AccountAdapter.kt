@@ -1,20 +1,17 @@
 package com.example.mywatertracker
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
-import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 const val ACCOUNT_EXTRA = "ACCOUNT_EXTRA"
 private const val TAG = "AccountAdapter"
 
-class AccountAdapter (private val context: Context, private val accounts: List<Accnt>) :
-    RecyclerView.Adapter<AccountAdapter.ViewHolder>(){
+class AccountAdapter(private val context: Context, private val accounts: List<Accnt>) :
+    RecyclerView.Adapter<AccountAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_account, parent, false)
         return ViewHolder(view)

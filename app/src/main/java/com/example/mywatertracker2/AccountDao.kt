@@ -1,6 +1,5 @@
 package com.example.mywatertracker
 
-import android.accounts.Account
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -19,4 +18,13 @@ interface AccountDao {
 
     @Query("DELETE FROM account_table")
     fun deleteAll()
+
+    @Query("SELECT AVG(amountDrank) FROM account_table")
+    fun getAvg(): Float
+
+    @Query("SELECT MIN(amountDrank) FROM account_table")
+    fun getMin(): Float
+
+    @Query("SELECT MAX(amountDrank) FROM account_table")
+    fun getMax(): Float
 }
