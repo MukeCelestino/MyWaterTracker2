@@ -2,7 +2,7 @@
 
 Submitted by: **Muketoi Celestino**
 
-**My Water Tracker App 2** is a health metrics app that allows users to track your water consumption [TODO] 
+**My Water Tracker App 2** is a health metrics app that allows users to track their water consumption 
 
 Time spent: **9** hours spent in total
 
